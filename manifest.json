@@ -1,8 +1,8 @@
 {
-  "name": "myaccount-custom",
-  "vendor": "giftcardcencosudqa",
-  "version": "0.2.0",
-  "title": "Manage list of business and Orders.",
+  "name": "my-account-ext",
+  "vendor": "lasirena",
+  "version": "0.1.1",
+  "title": "Extension de myaccount.",
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
