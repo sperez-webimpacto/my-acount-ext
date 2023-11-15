@@ -1,0 +1,4 @@
+mutation cencosudBusinessCreate($business: Business)
+  @context(provider: "giftcardcencosudqa.business-administration"){
+    cencosudBusinessCreate(business: $business)
+}

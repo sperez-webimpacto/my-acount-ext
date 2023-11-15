@@ -1,0 +1,4 @@
+mutation cencosudWhiteLabelCreate($whitelabel: WhiteLabel)
+  @context(provider: "giftcardcencosudqa.business-administration"){
+    cencosudWhiteLabelCreate(whitelabel: $whitelabel)
+}

@@ -1,0 +1,3 @@
+mutation insertBusinessMDATA($business: BusinessMD) @context(provider: "giftcardcencosudqa.business-administration"){
+  insertBusinessMDATA(business: $business)
+}

@@ -1,0 +1,29 @@
+query listOrders($term: String!, $field: String!, $dateFrom: String!, $dateTo: String!){
+  listOrders(term: $term, field: $field, dateFrom: $dateFrom, dateTo: $dateTo) @context(provider: "giftcardcencosudqa.shopping-orders-administration"){
+    id
+    assistant
+  	orderid
+    addresBilling
+    dataBusinessSelected
+    dataWhiteLabelSelected
+    giftCardFormater
+    jsonDataHost
+    typeBilling
+    bearerNominative
+    mountFormater
+    quantityFormater
+    createdIn
+    updatedIn
+    carrier
+    guide
+    followLink
+    status
+    csvDigital
+    emailUser
+    numberAgreement
+    invoiceURL
+    invoiceNumber
+    isNominate
+  }
+}
+

@@ -1,0 +1,55 @@
+query listBusinessByEmailMDATA($email: String){
+  listBusinessByEmailMDATA(email:$email)
+  @context(provider: "giftcardcencosudqa.business-administration"){
+    nombreEmpresa
+    rutEmpresa
+    tradenameEmpresa
+    fechaConvenioEmpresa
+    fechaInicioActividad
+    phoneEmpresa
+    cellphoneEmpresa
+    faxEmpresa
+    correoEmpresa
+    numeroSucursales
+    giroEmpresa
+    rutHolding
+    folioAutorizacion
+    monto
+    montoDisponible
+    montoEfectivo
+    montoEfectivoDisponible
+    nombreDireccion
+    numeroDireccion
+    casaDireccion
+    oficinaDireccion
+    pisoDireccion
+    bloqueDireccion
+    villaDireccion
+    codComuna
+    nombreComuna
+    codCiudad
+    nombreCiudad
+    codRegion
+    nombreRegion
+    estado
+    situacion
+    actividadEconomica
+    tipoEmpresa
+    tipoAdministracion
+    tamanoEmpresa
+    riesgo
+    clasificacion
+    periodoFacturacion
+    sucursales {
+      nombreSucursalActual
+      fonoSucursal
+      numeroSucursal
+      nombreDireccion
+      numeroDireccion
+      nombreComuna
+      nombreCiudad
+      nombreRegion
+      estado
+    }
+  }
+}

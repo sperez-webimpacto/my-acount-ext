@@ -1,0 +1,104 @@
+.productsummary {
+    display: flex;
+    width: 445px;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    background-color: var(--most-usedwhite);
+    border-radius: 4px;
+  }
+  
+  
+  .productsummary .frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .productsummary .namebrand {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .productsummary .name {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-weight: 400;
+    color: #004078;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .productsummary .div {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 21px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .productsummary .other-metadata {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .productsummary .price {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-weight: 400;
+    color: #004078;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+  
+  .productsummary .listprice {
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    color: #f1170a;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .productsummary .divwrapper {
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  
+  .productsummary .textwrapper {
+    position: absolute;
+    width: 132px;
+    height: 39px;
+    top: -1px;
+    left: 0;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 16px;
+  }

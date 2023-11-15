@@ -1,0 +1,6 @@
+mutation addShippingData(
+  $orderFormId: String,
+  $shippingData: ClientShippingData
+) {
+  addShippingData(orderFormId: $orderFormId, shippingData: $shippingData)
+}

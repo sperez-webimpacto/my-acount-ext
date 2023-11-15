@@ -1,0 +1,7 @@
+type Query {
+  getCardBalance: String @cacheControl(scope: PRIVATE, maxAge: SHORT)
+}
+
+type Mutation {
+ nominateGiftCards(cards: [String], orderId:String): String @cacheControl(scope: PRIVATE, maxAge: SHORT)
+}

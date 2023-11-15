@@ -1,0 +1,3 @@
+mutation nominateGiftCards($cards: [String], $orderId: String){
+  nominateGiftCards(cards: $cards, orderId: $orderId)
+}

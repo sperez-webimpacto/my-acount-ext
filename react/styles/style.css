@@ -1,0 +1,753 @@
+Gift Card Excel --------------------------------------------------------------------
+
+.giftCardExcel{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .giftCardExcel .giftCardExcelContent .giftCardExcelTitle h1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 22px;
+    color: #E48300;
+    margin-bottom: 10px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelTitle p{
+    text-align: left;
+    font-size: 16px;
+    color: #E48300;
+    margin-bottom: 10px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer {
+    margin-top: 30px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .text p{
+    text-align: left;
+    font-size: 16px;
+    color: #209091;
+    margin-bottom: 10px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    margin-top: 20px;
+    border: 2px solid #E5E5E5;
+    border-radius: 10px;
+    background-color: #fafafa;
+  }
+  
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent{
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gcmanual{
+    grid-column: 1/1;
+    grid-row: 1;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gcexcel{
+    grid-column: 2/2;
+    grid-row: 1;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs input{
+    position: absolute;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    color: #008081;
+  }
+  
+  .activeLabelExcel {
+    width: 102%;
+    position: relative;
+    left: -6.2px;
+    height: 60px;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+  }
+  .labelExcel {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .activeManual {
+    width: 106%;
+    position: relative;
+    left: -1px;
+    height: 60px;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+  }
+  .manualInactive {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .gcmanual{
+    position: relative;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    border-left: 0px solid;
+    padding: 16px 30px;
+    border-radius: 10px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .gcmanualInverse{
+    position: relative;
+    border-bottom: 2px solid #E5E5E5;
+    border-radius: 10px 0 0 0;
+    padding: 16px 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  
+  .gcexcelInverse{
+    position: relative;
+    border-bottom: 2px solid #E5E5E5;
+    padding: 16px 30px;
+    overflow: hidden;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .gcexcel{
+    position: relative;
+    border-bottom: 0px solid;
+    border-radius: 0 10px 0 0;
+    padding: 16px 30px;
+    overflow: hidden;
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .rounded{
+    position: absolute;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .roundedInverse{
+    position: absolute;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .roundedInverse{
+      position: relative;
+      top: -24px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .rounded{
+      position: relative;
+      top: -24px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .rounded div:nth-child(2){
+    width: 30px;
+    height: 32px;
+    border-left: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+    border-radius: 0 0 0 10px;
+    position: relative;
+    left: 21px;
+    top: -4px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .rounded div:nth-child(1){
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid #E5E5E5;
+    border-right: 2px solid #E5E5E5;
+    border-radius:  0 10px 0 0;
+    position: relative;
+    top: 22px;
+    left: -7px;
+  }
+  
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .roundedInverse div:nth-child(2){
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+    border-radius: 0 0 10px 0;
+    position: relative;
+    top: -2px;
+    left: -6px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .roundedInverse div:nth-child(1){
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid #E5E5E5;
+    border-left: 2px solid #E5E5E5;
+    border-radius:  10px 0 0 0;
+    position: relative;
+    top: 22px;
+    left: 22px;
+  }
+  
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent{
+    grid-column: 1/4;
+    grid-row: 2;
+    border: 1px solid #008081;
+    border-radius: 11px;
+    background-color: #fff;
+    margin: 0 2rem 2rem 2rem;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputManualP .gcInputItems{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputManualP .gcInputItems label {
+    margin: 0 1rem;
+    display: block;
+    width: 100%;
+    color: #008081;
+    font-size: 16px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputManualP .gcInputItems input{
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #008081;
+    border-radius: 25px;
+    margin: 0;
+    padding-left: 20px;
+    display: block;
+    margin-top: .3rem;
+    color: #008081;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputManualP .addInputs{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputManualP .addInputs p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #008081;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems{
+    display: flex;
+    padding: 30px 20px ;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems input{
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    margin: 0 10px;
+    padding-left: 20px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems button{
+    width: 100%;
+    background-color: white;
+    height: 45px;
+    border: 1px solid #A0CFD0;
+    border-radius: 25px;
+    margin: 0 10px;
+    color: #008081;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s ease;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems button:hover{
+    background-color: #008081;
+    color: #fff;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems .file {
+    width: 100%;
+    display: flex;
+  }
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems .file input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems .file label{
+    width: 100%;
+    background-color: #008081;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s ease;
+    color: #ffff;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems .file label:hover{
+    background-color: #ffffff;
+    border: 1px solid #008081;
+    border-radius: 25px;
+    color: #008081!important;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems .file label:hover ~ p{
+    color: #008081!important;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .gcInputItems .file label p{
+    font-weight: 700;
+    font-size: 13px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .addInputs{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+  
+  .giftCardExcel .giftCardExcelContent .giftCardExcelContainer .giftCardExcelInputs .gccontent .gcInputExcelP .addInputs p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #008081;
+    cursor: pointer;
+  }
+  
+  .gcmanual p,
+  .gcmanualInverse p,
+  .gcexcel p,
+  .gcexcelInverse p{
+    color: #008081;
+    font-weight: 700;
+  }
+  
+  .totals > div {
+    display: flex;
+    padding: 0 1rem;
+    position: relative;
+    margin-bottom: .3rem;
+  }
+
+  .totals > div .addInputs {
+    position: absolute !important;
+    right: 0;
+    top: 110%;
+    margin: 0 !important;
+}
+
+  .totals > div > p {
+    line-height: 1;
+    margin: 0 1rem;
+    background-color: #efefef;
+    padding: 0.7rem 1.3rem;
+    border-radius: 50px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    color: #008081;
+  }
+
+  /* .totals{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: left;
+  }
+  .totals p {
+    width: 100%;
+    height: 40px;
+    background: rgb(236, 236, 236);
+    border-radius: 25px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  } */
+
+  .nextStepTwo{
+    margin-top: 70px;
+    margin-bottom: 180px;
+  }
+
+  /* Formato de GC ------------------------------------- */
+
+/* .wizardScreenThree{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  } */
+
+.titleStepThree {
+  position: relative;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.subTitleStepThree{
+  position: relative;
+  margin: 50px 0 70px 0;
+}
+
+.subTitleStepThree p{
+  font-size: 32px;
+  color: #E48300;
+  font-weight: bold;
+}
+
+.titleStepThree p:nth-child(1) {
+  padding: 3px 44px;
+  background: #008081;
+  border-radius: 25px;
+  color: #ffff;
+  font-weight: 700;
+}
+
+.titleStepThree hr {
+  padding: 0;
+  margin: 0 20px;
+  border: none;
+  border-left: 2.5px solid #40A0A1;
+  height: 30px;
+  width: 3px;
+}
+
+.titleStepThree p:nth-child(3) {
+  font-weight: 700;
+  color: #008081;
+}
+
+.wizardScreenThree .titleInc p{
+  font-size: 22px;
+}
+
+
+
+
+.gcFormat{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.gcFormat .gcFormatContent{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gcFormat .gcFormatContent .gcFormatSelect{
+  display: grid;
+  grid-template-columns: .6fr 1fr;
+}
+
+.gcFormat .gcFormatContent .gcFormatSelect .boxItems .box:nth-child(1){
+  grid-column: 1/1;
+  margin-top: 50px;
+}
+
+.gcFormat .gcFormatContent .gcFormatSelect .boxItems .box:nth-child(2){
+  grid-column: 2/2;
+}
+
+.gcFormat .gcFormatContent .gcFormatSelect .boxItems:nth-child(2){
+  margin-left: 70px;
+}
+
+
+.gcFormat .gcFormatContent .box .gcFormatInputs{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  
+}
+
+.gcFormat .gcFormatContent .box .gcFormatInputs label{
+  position: relative;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid #008081;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+  cursor: pointer;
+}
+
+.gcFormat .gcFormatContent .box .gcFormatInputs label hr{
+  height: 50px;
+  width: 3px;
+  background: #008081;
+  border: 0;
+  border-radius: 10px;
+}
+
+.gcFormat .gcFormatContent .box .gcFormatInputs label p{
+  font-size: 16px;
+  font-weight: 700;
+  color: #008081;
+  margin-left: 1.3rem;
+}
+
+.gcFormat .gcFormatContent .box:nth-child(1) .gcFormatInputs input{
+  position: relative;
+  top: 55px;
+  left: 80px;
+}
+
+.gcFormat .gcFormatContent .box:nth-child(2) .gcFormatInputs input{
+  position: relative;
+  top: 55px;
+  left: 80px;
+}
+
+#fisico:after{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #209091;
+  left: -2px;
+}
+
+#fisico:checked:after{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #ebf6f6;
+  left: -2px;
+  z-index: 3;
+}
+
+#fisico:checked ~ label,
+#digital:checked ~ label{
+  background-color: #008081;
+  color: white;
+}
+
+#fisico:checked ~ label hr,
+#digital:checked ~ label hr{
+  background-color: #ffffff;
+}
+
+#fisico:checked ~ label p,
+#digital:checked ~ label p{
+  color: #ffffff;
+}
+
+#digital:after{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #209091;
+  left: -2px;
+}
+
+#digital:checked:after{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #209091;
+  left: -2px;
+  z-index: 3;
+}
+
+.gcFormatResponse{
+  position: relative;
+  margin-top: 30px;
+}
+
+.gcFormatResponse .title{
+  text-align: start;
+}
+
+.gcFormatResponse .title h1{
+  font-size: 20px;
+  color: #E48300;
+}
+
+.gcFormatResponse .title p{
+  margin-top: 0.5rem;
+  font-size: 15px;
+  color: rgb(43, 115, 116);
+}
+
+.gcFormatResponse .itemsInput{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gcFormatResponse .itemsInput input {
+  margin: 5px 0;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #008081;
+  color: #008081;
+  font-size: 16px;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.gcFormatResponse .itemsInput input::placeholder {
+  color: #008081;
+}
+
+/* Resumen -------------------------------------- */
+
+.resumen{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.resumen .resumenContent{
+  margin-top: 40px;
+  padding: 70px 70px;
+  border: 2px solid #008081;
+  border-radius: 10px;
+}
+
+.resumen .resumenContent table{
+  border-collapse: separate;
+  width: 100%;
+}
+
+.resumen .resumenContent table tr{
+  width: 100%;
+  color: #008081;
+  text-align: left;
+}
+.resumen .resumenContent table td{
+  border-bottom: 1px solid #008081;
+  position: relative;
+  left: -2px;
+}
+.resumen .resumenContent table th{
+  border-bottom: 1px solid #008081;
+}
+
+.resumen .resumenContent table tr  td a{
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid #008081;
+  padding: 5px 20px;
+  color: #008081;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: .3s ease;
+}
+
+.resumen .resumenContent table tr  td a:hover{
+  background-color: #008081;
+  border: 1px solid #008081;
+  color: #fff;
+}
+
+.resumen .resumenContent table tr td{
+  margin: 15px;
+  padding: 15px;
+}
+
+.resumen .cardGC{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  top: -150px;
+  padding-right: 20px;
+}
+
+.resumen .cardGC img{
+  width: 100%;
+  max-width: 300px;
+}

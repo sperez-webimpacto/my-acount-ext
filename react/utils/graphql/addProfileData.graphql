@@ -1,0 +1,6 @@
+mutation addProfileData(
+  $orderFormId: String,
+  $profileData: ClientProfileData
+) {
+  addProfileData(orderFormId: $orderFormId, shippingData: $shippingData)
+}

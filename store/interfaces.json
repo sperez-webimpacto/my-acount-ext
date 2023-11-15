@@ -1,0 +1,53 @@
+{
+  "my-account-link.sirenaclub-link": {
+    "component": "MyAccountSirenaClubLink"
+  },
+  "my-account-link.sirenaclub-page": {
+    "component": "MyAccountSirenaClubPage"
+  },
+  "my-account-link.coupon-link": {
+    "component": "MyAccountCouponLink"
+  },
+  "my-account-link.coupon-page": {
+    "component": "MyAccountCouponPage"
+  },
+
+  "my-account-link.products-link": {
+    "component": "MyAccountProductsLink"
+  },
+  "my-account-link.products-page": {
+    "component": "MyAccountProductsPage"
+  },
+
+  "my-account-link.favorites-link": {
+    "component": "MyAccountFavoritesLink"
+  },
+  "my-account-link.favorites-page": {
+    "component": "MyAccountFavoritesPage"
+  },
+  "my-account-link.alerts-link": {
+    "component": "MyAccountAlertsLink"
+  },
+  "my-account-link.alerts-page": {
+    "component": "MyAccountAlertsPage"
+  },
+  "my-account-link.cheque-link": {
+    "component": "MyAccountChequeLink"
+  },
+  "my-account-link.cheque-page": {
+    "component": "MyAccountChequePage"
+  },
+  "my-account-link.card-link": {
+    "component": "MyAccountCardLink"
+  },
+  "my-account-link.card-page": {
+    "component": "MyAccountCardPage"
+  },
+
+  "my-account-link.giftcards-link": {
+    "component": "MyAccountOrdersLink"
+  },
+  "my-account-link.giftcards-page": {
+    "component": "MyAccountOrdersPage"
+  }
+}

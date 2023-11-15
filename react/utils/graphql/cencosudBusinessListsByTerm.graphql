@@ -1,0 +1,7 @@
+query cencosudBusinessListsByTerm($businessByTerm: BusinessByTerm){
+  cencosudBusinessListsByTerm(businessByTerm: $businessByTerm)
+  @context(provider: "giftcardcencosudqa.business-administration"){
+    rutEmpresa
+    nombreEmpresa
+  }
+}

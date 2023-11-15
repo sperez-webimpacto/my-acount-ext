@@ -1,0 +1,9 @@
+{
+  "stack": "nodejs",
+  "memory": 1024,
+  "ttl": 300,
+  "timeout": 60,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1
+}

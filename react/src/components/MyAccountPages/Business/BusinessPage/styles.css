@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar {
+  padding: 20px;
+}
+
+.formcolumn {
+  margin: 10px;
+  box-sizing: border-box; 
+  padding: 20px;
+  /* height: 100%; */
+  height: fit-content;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(211, 21, 21, 0.125);
+
+}
+
+.textcolumn {
+  margin: 10px;
+  box-sizing: border-box; 
+  padding: 20px;
+  /* height: 100%; */
+  height: fit-content;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+label {
+  display: block; /* Coloca las etiquetas en una línea diferente */
+  margin-bottom: 5px;
+}
+
+.textCenter{
+  text-align: center!important;
+}
+
+
+.customButton {
+  padding: 8px 50px;
+  background-color: transparent;
+  color: #004078;
+  border: 1px solid #004078;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+
+.customButtonsolid {
+  padding: 8px 50px;
+  background-color: #004078;
+  color: #ffffff;
+  border: 1px solid #004078;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+
+.customButton:hover{
+  padding: 8px 50px;
+  background-color: #004078;
+  color: #ffffff;
+  border: 1px solid #004078;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .formcolumn {
+    padding: 2px;
+    margin: 0;
+    border: 0;
+  }
+}
+
+div.w-100 + .pagetitlecustom{
+  float: left;
+}
+
+
+.pagetitlecustom {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.004em;
+  color: #3c3c3b;
+  text-align: center;
+  margin-top: auto;
+}

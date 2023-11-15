@@ -1,0 +1,22 @@
+{
+  "my-account-menu>my-account-link": [
+    "my-account-link.sirenaclub-link",
+    "my-account-link.coupon-link",
+    "my-account-link.products-link",
+    "my-account-link.favorites-link",
+    "my-account-link.alerts-link",
+    "my-account-link.cheque-link",
+    "my-account-link.card-link",
+    "my-account-link.giftcards-link"
+  ],
+  "my-account-pages>my-account-page": [
+    "my-account-link.sirenaclub-page",
+    "my-account-link.coupon-page",
+    "my-account-link.products-page",
+    "my-account-link.favorites-page",
+    "my-account-link.alerts-page",
+    "my-account-link.cheque-page",
+    "my-account-link.card-page",
+    "my-account-link.giftcards-page"
+  ]
+}
