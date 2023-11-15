@@ -1,12 +1,12 @@
-.container {
+.containerSirenaClub {
   display: flex;
   flex-wrap: wrap;
 }
-.sidebar {
+.sidebarSirenaClub {
   padding: 20px;
 }
 
-.formcolumn {
+.formcolumnSirenaClub {
   margin: 10px;
   box-sizing: border-box; 
   padding: 20px;
@@ -19,7 +19,7 @@
 
 }
 
-.textcolumn {
+.textcolumnSirenaClub {
   margin: 10px;
   box-sizing: border-box; 
   padding: 20px;
@@ -36,22 +36,23 @@ label {
   margin-bottom: 5px;
 }
 
-.textCenter{
+.textCenterSirenaClub{
   text-align: center!important;
 }
 
 
-.customButton {
+.customButtonSirenaClub {
   padding: 8px 50px;
   background-color: transparent;
   color: #004078;
   border: 1px solid #004078;
   border-radius: 0.25rem;
   cursor: pointer;
+  margin-bottom: 7px;
 }
 
 
-.customButtonsolid {
+.customButtonsolidSirenaClub {
   padding: 8px 50px;
   background-color: #004078;
   color: #ffffff;
@@ -61,31 +62,17 @@ label {
 }
 
 
-.customButton:hover{
+.customButtonSirenaClub:hover{
   padding: 8px 50px;
   background-color: #004078;
   color: #ffffff;
-  border: 1px solid #004078;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-  .formcolumn {
-    padding: 2px;
-    margin: 0;
-    border: 0;
-  }
-}
-
-div.w-100 + .pagetitlecustom{
-  float: left;
-}
-
-
-.pagetitlecustom {
+.pagetitlecustomSirenaClub {
   font-family: "Montserrat-Bold";
   font-size: 24px;
   line-height: 28px;
@@ -93,4 +80,36 @@ div.w-100 + .pagetitlecustom{
   color: #3c3c3b;
   text-align: center;
   margin-top: auto;
+}
+
+.buttonsSirenaClub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.totalContainerSirenaClub {
+  margin: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .formcolumnSirenaClub {
+    padding: 2px;
+    margin: 0;
+    border: 0;
+  }
+  .pagetitlecustomSirenaClub {
+    margin: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+  }
+  .buttonsSirenaClub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
