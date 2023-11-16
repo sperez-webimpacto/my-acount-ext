@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from "./styles.css"
 //const active = `${styles.btn} ${styles.btngroupactive}`
+import MenuLink from "../../components/MenuLink"
 
 const MyAccountAlert = (props: any) => {
     console.log({ props })
   
     return (
       <>
-    <p className={styles.pagetitlecustom}>Mis alertas</p>
+        <div className={styles.totalContainerAlerts}>
+      <MenuLink link="/account"/>
+    <p className={styles.pagetitlecustomAlerts}>Mis alertas</p>
   <div className={styles.formcolumn}>
  <p style={{margin:5}}>Tienes Las Siguientes Alertas Activas:</p>
   <div className={styles.gridcontainer}>
@@ -63,7 +66,7 @@ const MyAccountAlert = (props: any) => {
   </div>
 
 </div>
-     
+</div>   
       </>
     )
     }

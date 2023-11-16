@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from "./MyAccountCheque.css"
 const formCol = `${styles.formgroup} col-md-2`
+import MenuLink from "../../components/MenuLink"
 
 const MyAccountCheque = (props: any) => {
     console.log({ props })
   
     return (
       <>
-    <p className={styles.pagetitlecustom}>Cheque trimestral</p>
+    <div className={styles.totalContainerCheque}>
+    <MenuLink link="/account"/>
+    <p className={styles.pagetitlecustomCheque}>Cheque trimestral</p>
         <div className={styles.formcolumn}>
         <p>Con la sirena Club, acumulas en cada compra. Aqui podras encontrar toda la informacion de tu proximo cheque trimestral.</p>
           <form>
@@ -55,7 +58,7 @@ const MyAccountCheque = (props: any) => {
           </>
           </form>
         </div>
-     
+        </div>
       </>
     )
     }

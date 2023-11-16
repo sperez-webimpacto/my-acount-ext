@@ -217,7 +217,28 @@ label {
 }
 
 
+.pagetitlecustomCard {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.004em;
+  color: #3c3c3b;
+  text-align: center;
+  margin-top: auto;
+}
+
+.totalContainerCard {
+  margin: 6px;
+}
+
 @media screen and (max-width: 768px) {
+  .pagetitlecustomCard {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin-top: 0;
+  }
   .formcolumn {
     padding: 2px;
     margin: 0;

@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from "./styles.css"
 const formCol = `${styles.formgroup} col-md-6`
+import MenuLink from "../../components/MenuLink"
 
 const MyAccountSirenaClub = (props: any) => {
     console.log({ props })
   
     return (
       <>
-    <p className={styles.pagetitlecustom}>La Sirena Club</p>
+          <div className={styles.totalContainerCard}>
+    <MenuLink link="/account"/>
+    <p className={styles.pagetitlecustomCard}>La Sirena Club</p>
         <div className={styles.formcolumn}>
          
           <>
@@ -38,7 +41,7 @@ const MyAccountSirenaClub = (props: any) => {
             }
           </>
         </div>
-     
+        </div>
       </>
     )
     }

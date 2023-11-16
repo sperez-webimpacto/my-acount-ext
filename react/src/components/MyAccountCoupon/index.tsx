@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 import { OrderForm } from 'vtex.order-manager'
+import MenuLink from "../../components/MenuLink"
 
 import styles from './styles.css'
 
@@ -10,10 +11,10 @@ const MyAccountCouponSection: FC = () => {
 
   return (
       <>
-      <p className={styles.pagetitlecustom}>Mis cupones</p>
-    
-    <div className={styles.container}>
-          <div className={styles.formcolumn}>
+      <div className={styles.totalContainerCoupon}>
+      <MenuLink link="/account"/>
+      <p className={styles.pagetitlecustomCoupon}>Mis cupones</p>
+          <div className={styles.fcolumnCoupon}>
             <p> Todos tus cupones, online y offline en tu dispositivo, para usar cuando y donde los necesites. </p>
             <div className={styles.containerCoupon}>
               <div className={styles.couponBox}>
@@ -95,7 +96,7 @@ const MyAccountCouponSection: FC = () => {
                    </a>
                     </div>
           </div>
-        </div>
+          </div>    
      
       </>
   )

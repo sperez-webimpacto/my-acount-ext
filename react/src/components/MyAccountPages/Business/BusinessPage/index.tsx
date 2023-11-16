@@ -12,7 +12,7 @@ const MyAccountSirenaClubSection: FC = () => {
   return (
       <>
       <div className={styles.totalContainerSirenaClub}>
-      <MenuLink link="/account/menu"/>
+      <MenuLink link="/account"/>
       <p className={styles.pagetitlecustomSirenaClub}>La Sirena Club</p>
       <div className={styles.containerSirenaClub}>
         <div className={styles.formcolumnSirenaClub}>

@@ -222,7 +222,28 @@
   
 
   
+  .pagetitlecustomCheque {
+    font-family: "Montserrat-Bold";
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.004em;
+    color: #3c3c3b;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .totalContainerCheque {
+    margin: 6px;
+  }
+
   @media screen and (max-width: 768px) {
+    .pagetitlecustomCheque {
+      font-size: 17px;
+      font-weight: bold;
+      color: #000;
+      text-align: left;
+      margin-top: 0;
+    }
     .containerCoupon {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

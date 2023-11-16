@@ -1,9 +1,142 @@
-.btngroup {
-    display: inline-flex;
-    border: 1px solid var(--other-light, #DEE7EF);
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 12px 0px;
+
+.mobilproductsummary {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  background-color: var(--most-usedwhite);
+  border-radius: 4px;
+  margin: 10px 0px;
+}
+
+.mobilproductsummary .mobilimage {
+  position: relative;
+  width: 113px;
+  height: 113px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.mobilproductsummary .mobilframe {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: inherit;
+  display: flex;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.mobilproductsummary .mobilnamebrand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.mobilproductsummary .mobilname {
+  position: relative;
+  align-self: stretch;
+  margin-top: 1px;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #004078;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.mobilproductsummary .mobildiv {
+  align-items: center;
+  gap: 21px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  margin-top: -40px;
+}
+
+.mobilproductsummary .mobilothermetadata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.mobilproductsummary .mobilprice {
+  position: relative;
+  width: fit-content;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #004078;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.mobilproductsummary .mobillistprice {
+  position: relative;
+  width: fit-content;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #f1170a;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.mobilproductsummary .mobildivwrapper {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0px;
+  background-color: #004078;
+  border-radius: 6px;
+  display: flex;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.mobilproductsummary .mobiltextwrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -4.25px;
+  margin-bottom: -2.25px;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+
+.btngroupProducts {
+  display: inline-flex;
+  border: 1px solid var(--other-light, #DEE7EF);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 12px 0px;
   }
 
   .btngroupactive{
@@ -15,7 +148,7 @@
     background-color: #fff;
     border: none;
     color: #333;
-    padding: 8px 10px;
+    padding: 3px 3px;
     cursor: pointer;
   }
   
@@ -34,53 +167,88 @@
   }
   
   .formcolumn {
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid rgba(0,0,0,.125);
-    flex: none;
+    padding: 2px;
   }
 
-  .btn:hover {
-    background-color: #ddd;
-  }
-
-  .nncontainer {
+  .ncontainer {
     display: flex;
     width: 445px;
     align-items: center;
     gap: 12px;
   }
-  
-  .nncontainer img {
-    max-width: 100px;
-  }
 
-  .nncontainer .text-container {
+ 
+  .customButtonsolid {
     display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  
-  .nncontainer p {
-    margin: 0;
-    padding: 5px 0;
-  }
-  
-  .nncontainer button {
-    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 22px;
+    position: relative;
+    color: #fff;
+    background-color: #004078;
+    border: 0;
+    border-radius: 5px;
   }
 
+  .customButton {
+  padding: 8px 40px;
+  background-color: transparent;
+  color: #004078;
+  border: 1px solid #004078;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 10px;
+}
 
-.gridcontainer {
+.mobiltextCenter {
+  text-align: center!important;
+}
+
+.gridcontainerProducts {
     display: grid;
     grid-template-columns: repeat(2, 445px);
     gap: 20px;
   }
 
+  .totalContainerProducts {
+    margin: 6px;
+  }
+
+  .pagetitlecustomProducts {
+    font-family: "Montserrat-Bold";
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.004em;
+    color: #3c3c3b;
+    text-align: center;
+    margin-top: auto;
+  }
+
   @media screen and (max-width: 768px) {
-    .gridcontainer {
-      display: grid;
-      grid-template-columns: repeat(1, 445px);
+    .mobilproductsummary .mobilframe {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 34px;
+      display: flex;
+      position: relative;
+      flex: 1;
+      align-self: stretch;
+      flex-grow: 1;
+    }
+    
+    .btngroupProducts {
+      display: inline-flex;
+      border: 1px solid var(--other-light, #DEE7EF);
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 12px 0px;
+      font-size: 13px;
+    }
+
+    .gridcontainerProducts {
+      display: block;
+      grid-template-columns: repeat(2, 445px);
       gap: 20px;
     }
     .btn {
@@ -102,51 +270,13 @@
     .nncontainer img {
       max-width: 25%;
     }
+    .pagetitlecustomProducts {
+      font-size: 17px;
+      font-weight: bold;
+      color: #000;
+      text-align: left;
+      margin-top: 0;
+    }
+    
     
   }
-
-  .ftext{
-    color: #004078;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    width: 190%;
-  }
-  
-
-  .customButtonsolid {
-    padding: 8px 50px;
-    background-color: #004078;
-    color: #ffffff;
-    border: 1px solid #004078;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-
-  .customButton {
-  padding: 8px 40px;
-  background-color: transparent;
-  color: #004078;
-  border: 1px solid #004078;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.pagetitlecustom {
-  font-family: "Montserrat-Bold";
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -0.004em;
-  color: #3c3c3b;
-  text-align: center;
-  margin-top: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .formcolumn {
-    padding: 2px;
-    margin: 0;
-    border: 0;
-  }
-}
